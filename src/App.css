@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Background with luxury gradient */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #2c2c2c);
+  color: #f5f5f5;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+/* Main card */
+main {
+  background: rgba(20, 20, 20, 0.9);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.25), 0 0 50px rgba(255, 215, 0, 0.15);
+  text-align: center;
+  border: 1px solid rgba(255, 215, 0, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Title */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #ffd700; /* Gold */
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+}
+
+/* Input section */
+.imput-section {
+  margin: 20px 0;
+}
+
+/* Range sliders */
+.input-slider {
+  width: 100%;
+  margin: 10px 0 20px 0;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+.input-slider::-webkit-slider-runnable-track {
+  height: 6px;
+  background: linear-gradient(90deg, #ffd700, #ffae00);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+}
+
+.input-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border: 2px solid #ffd700;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -7px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+  transition: 0.3s;
+}
+
+.input-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  background: #ffd700;
+  color: #000;
+}
+
+/* Weight & height outputs */
+.slider-output {
+  font-size: 1.1rem;
+  margin: 5px 0;
+  color: #f1f1f1;
+  font-weight: 500;
+}
+
+/* Output section */
+.output-section {
+  margin-top: 30px;
+}
+
+.output-section h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.bmi-output {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffd700;
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+  margin: 0;
 }
